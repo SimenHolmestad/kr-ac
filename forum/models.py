@@ -11,4 +11,4 @@ class ForumPost(models.Model):
     image = models.ImageField(blank=True, null=True)
 
     def __str__(self):
-        return self.headline + " av " + self.author.first_name + " " + self.author.last_name
+        return self.headline + " av " + self.author.username
