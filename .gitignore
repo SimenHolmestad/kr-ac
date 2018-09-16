@@ -1,0 +1,10 @@
+# database
+*.sqlite3
+
+# mac finder window placement files
+.DS_Store
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
