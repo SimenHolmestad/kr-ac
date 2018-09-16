@@ -8,7 +8,7 @@ class ForumPost(models.Model):
     headline = models.CharField("Overskrift", max_length=40)
     content = models.TextField("innhold", default="")
     time_made = models.DateTimeField(default=timezone.now)
-    image = models.ImageField()
+    image = models.ImageField(blank=True, null=True)
 
     def __str__(self):
         return self.headline + " av " + self.author.first_name + " " + self.author.last_name
