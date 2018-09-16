@@ -1,0 +1,7 @@
+<h1>Forumposter</h1>
+{% for forum_post in forum_posts %}
+    <h2>{{ forum_post.headline }}</h2>
+    <h3>av {{ forum_post.author.first_name }} {{ forum_post.author.last_name }}</h3>
+    <p>{{ forum_post.content }}</p>
+    <hr>
+{% endfor %}
